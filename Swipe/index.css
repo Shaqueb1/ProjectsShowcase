@@ -145,4 +145,40 @@ p {
     border: none;
     padding: var(--spacing-sm) var(--spacing-md);
     color: var(--text-light);
+    transition: all 0.2s ease-in-out;
+}
+
+.primary-button:hover {
+    background-color: var(--btn-hover-color);
+    cursor: pointer;
+}
+
+.secondary-button {
+    font-family: var(--body-font);
+    font-size: var(--button-size);
+    letter-spacing: 1.25px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    color: var(--primary-accent);
+    transition: all 0.2s ease-in-out;
+}
+
+.secondary-button:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.with-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.with-icon > img {
+    transition: transform 0.2s ease-in-out;
+}
+
+.with-icon:hover > img{
+    transform: translateX(4px)
 }
